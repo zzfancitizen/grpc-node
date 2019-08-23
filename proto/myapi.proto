@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package myapi;
+
+service Greeter {
+    rpc sayHi (request) returns (reply);
+}
+
+message request {
+    string name = 1;
+}
+
+message reply {
+    string message = 1;
+}
